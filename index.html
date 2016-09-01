@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Otakoi test</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fonts.css -->
+    <link href="css/fonts.css" rel="stylesheet">
+    
+    <!-- main.css -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 top-header">
+            <div class="col-lg-3 logo-wrapper">
+              <img src="img/logo_intersono_engl.png" class="logo" alt="Intersono logotype" />
+            </div>
+            <div class="col-lg-3 top-contacts-wrapper">
+              <div class="top-contacts top-hdr-wrapper">
+                <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>international@intersono.ua</p>
+                <p><span><i class="fa fa-skype" aria-hidden="true"></i></span> intersono.1576546884</p>
+              </div>
+            </div>
+            <div class="col-lg-2 phone-wrapper">
+              <div class="top-hdr-wrapper">
+                <p class="right">
+                  <span><i class="fa fa-mobile" aria-hidden="true"></i></span>+38 (032) 295 55 55
+                </p>
+                <p class="right">+38 (032) 295 55 55</p>
+              </div>
+            </div>
+            <div class="col-lg-2 reg-btn-wrapper">
+              <div class="top-hdr-wrapper">
+                <button class="btn-reg btn btn-default">Sign up for consultation</button>
+              </div>
+            </div>
+            <div class="col-lg-2 lang-dropdown-wrapper">
+              <div class="top-hdr-wrapper">
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                    <p>
+                      <span><i class="fa fa-globe" aria-hidden="true"></i></span>
+                      <span>English</span>
+                      <span id="caret" class="caret"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </p>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">Ukrainian</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-menu-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="menu">
+              <nav class="navbar navbar-default">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clinic <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About infertility <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Treatments <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="menu-link">Prices</a></li>
+                      <li class="dropdown menu-link">
+                        <a href="#" class="dropdown-toggle menu-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">International Patient Care <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="menu-link">Patient Success stories</a></li>
+                      <li><a href="#" class="menu-link">Blogs</a></li>
+                      <li><a href="#" class="menu-link">Contact</a></li>
+                      <li><a href="#" class="menu-link"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header parallax">
+        <div class="container">
+          <div class="row">
+            <div class="bottom-header-menu">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#" class="active-link">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Egg and sperm donor catalogs</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hidden">About</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <h1>Egg and sperm donor catalogs</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <aside class="col-lg-3">
+            <div class="list-aside">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  IVF
+                </a>
+                <a href="#" class="list-group-item">ICSI</a>
+                <a href="#" class="list-group-item">IUI</a>
+                <a href="#" class="list-group-item">Ovaluation induction</a>
+                <a href="#" class="list-group-item">Assisted Hatching</a>
+                <a href="#" class="list-group-item">Endometrial Scratch</a>
+                <a href="#" class="list-group-item">Blastocyst Transfer</a>
+                <a href="#" class="list-group-item">Frozen embryo transfer</a>
+                <a href="#" class="list-group-item">Embryo Culture</a>
+                <a href="#" class="list-group-item">Egg donation</a>
+                <a href="#" class="list-group-item">Storage and Preservation</a>
+                <a href="#" class="list-group-item">Social freezing</a>
+                <a href="#" class="list-group-item">Cryopreservation of ovarian tissue</a>
+                <a href="#" class="list-group-item">PGD</a>
+                <a href="#" class="list-group-item">Surrogacy</a>
+              </div>             
+            </div>
+            <form action="#" method="post">
+              <h2>Contact Us</h2>
+              <div class="form-group">
+                <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input name="phone_number" type="text" class="form-control" id="exampleInputEmail1" placeholder="With country, ex +39">
+              </div>
+              <div class="form-group">
+                <input name="country" type="text" class="form-control" id="exampleInputPassword1" placeholder="Country">
+              </div>
+              <div class="form-group">
+                <select class="form-control form-select" size="1" name="wanted">
+                  <option value="first">I am interested in</option>
+                  <option value="second">second</option>
+                  <option value="third">third</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-default btn-reg">Send</button>
+            </form>
+            <div class="main-banner"></div>
+          </aside>
+          <section class="col-lg-9">
+            <div class="article-container">
+              <div class="col-lg-4 article-wrapper">
+                <div class="wrap">
+                  <article>
+                    <h4>Egg donor catalogs</h4>
+                    <p>IVF (in vitro fertlisation) involves retrieving eggs from a woman’s ovaries and fertilising these in the laboratory with sperm from either her partner or a donor to create embryos which are replaced back into her womb </p>
+                    <p>to develop as a normal pregnancy. The journey through an IVF treatment can seem quite a daunting process, so we are here to help support you through every step, ensuring that you feel happy that the treatment is the right way forward for you.</p>
+                    <p>IVF (in vitro fertlisation) involves retrieving eggs from a woman’s ovaries and fertilising these in the laboratory with sperm from either her partner or a donor to create embryos which are replaced back into her womb </p>
+                    <p>to develop as a normal pregnancy. The journey through an IVF treatment can seem quite a daunting process, so </p>
+                  </article>
+                  <button class="btn-reg btn btn-default">Show database</button>
+                </div>
+              </div>
+              <div class="carousel-wrapper">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                 
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="http://itc.ua/wp-content/uploads/2014/10/doctors.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h3></h3>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="http://images.wisegeek.com/group-of-doctors.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h3></h3>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="http://www.qqxxzx.com/images/happy-picture/happy-picture-10.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h3></h3>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+                </div> <!-- Carousel -->
+              </div>
+          </div>
+
+            <div class="article-container"> 
+            <div class="col-lg-4">
+              <div class="article-wrapper">
+                <div class="wrap">
+                  <article>
+                    <h4>Sperm donor catalogs</h4>
+                    <p>IVF (in vitro fertlisation) involves retrieving eggs from a woman’s ovaries and fertilising these in the laboratory with sperm from either her partner or a donor to create embryos which are replaced back into her womb </p>
+                    <p>normal pregnancy. The journey through an IVF treatment can seem quite a daunting process, so we are here to help support you through every step, ensuring that you feel happy that the treatment is the right way forward for you. donor to create embryos which are replaced back into her </p>
+                    <p>womb to develop as a normal pregnancy. The journey through an IVF treatment can seem quite a daunting process, so we are here to help support you through every step, ensuring that you feel happy that the treatment is the right way forward for you.</p>
+                  </article>
+                  <button class="btn-reg btn btn-default">Show database</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-wrapper">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+               
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="http://weknowyourdreams.com/images/happy/happy-03.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="http://cdn.playbuzz.com/cdn/250babc2-8c70-4399-8402-c2d257be3e1d/ade0bea9-5aa4-44f6-9f8e-a1785acd7df2.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="http://i.huffpost.com/gen/1392994/images/o-HAPPY-WOMEN-facebook.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+               
+                <!-- Controls -->
+              <!--  
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                </a>
+              -->
+              </div> <!-- Carousel -->
+            </div>
+          </div>
+          </section>
+        </div>
+      </div>
+      <a href="#" class="contact-us"></a>
+    </main>
+    <section class="bottom-section">
+      <div class="container">
+        <div class="row">
+          <h2>Infertility treatment <span>Programs</span></h2>
+          <div class="squares">
+            <div class="squares-wrapper">
+              <div class="square-container">
+                <h5>IVF + ICSI</h5>
+                <p>
+                  <a href="#">Read more</a>
+                </p>
+              </div>
+              <div class="square-container">
+                <h5>IVF+ ICSI with<br>storage</h5>
+                <p> 
+                  <a href="#">Read more</a>
+                </p>
+              </div>
+              <div class="square-container">
+                <h5>IVF with fresh<br>donor oocytes</h5>
+                <p>
+                  <a href="#">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <button class="up-btn"></button>
+        <div class="container">
+          <div class="row">
+            <nav class="top-bottom-nav">
+              <h5>Clinic</h5>
+              <ul>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Why us</a>
+                </li>
+                <li>
+                  <a href="#">Our Certificates</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Success Rates</a>
+                </li>
+                <li>
+                  <a href="#">Location</a>
+                </li>
+                <li>
+                  <a href="#">3-D Clinic Tour</a>
+                </li>
+                <li>
+                  <a href="#">Photo Gallery</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="top-bottom-nav">
+              <h5>About Infertility</h5>
+              <ul>
+                <li>
+                  <a href="#">Causes of infertility</a>
+                </li>
+                <li>
+                  <a href="#">Female infertility</a>
+                </li>
+                <li>
+                  <a href="#">Male infertility</a>
+                </li>
+                <li>
+                  <a href="#">Female infertility Diagnostics</a>
+                </li>
+                <li>
+                  <a href="#">Male infertility Diagnostics</a>
+                </li>
+                <li>
+                  <a href="#">Genetic Diagnostics</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="top-bottom-nav">
+              <h5>Treatments</h5>
+              <ul>
+                <li>
+                  <a href="#">Fertility treatment methods</a>
+                </li>
+                <li>
+                  <a href="#">Infertility treatment Programs</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="top-bottom-nav">
+              <h5>International Patient<br>Care</h5>
+              <ul>
+                <li>
+                  <a href="#">First visit</a>
+                </li>
+                <li>
+                  <a href="#">Care and assistance</a>
+                </li>
+                <li>
+                  <a href="#">International patients accommodation</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="top-bottom-nav">
+              <h5>Information</h5>
+              <ul>
+                <li>
+                  <a href="#">Prices</a>
+                </li>
+                <li>
+                  <a href="#">Patient Success stories</a>
+                </li>
+                <li>
+                  <a href="#">Blogs</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <span>© 2008-2015</span>
+            <nav class="soc-icons-menu">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li>     
+              </ul>
+            </nav>
+            <span class="otakoyi-logo">Design and Development by <strong> OTAKOYI<strong></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

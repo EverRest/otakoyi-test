@@ -14,6 +14,9 @@
     
     <!-- main.css -->
     <link href="css/main.css" rel="stylesheet">
+    
+    <!-- media queries media.css -->
+    <link href="css/media.css" rel="stylesheet" type="text/css">
 
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
@@ -29,31 +32,31 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 top-header">
-            <div class="col-lg-3 logo-wrapper">
-              <img src="img/logo_intersono_engl.png" class="logo" alt="Intersono logotype" />
+          <div class="top-header">
+            <div class="logo-wrapper left">
+              <img src="img/logo_intersono_engl.png" class="logo" alt="Intersono logotype">
             </div>
-            <div class="col-lg-3 top-contacts-wrapper">
-              <div class="top-contacts top-hdr-wrapper">
+            <div class="top-contacts-wrapper visible-lg visible-md left top-hdr-wrapper">
+              <div class="top-contacts">
                 <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>international@intersono.ua</p>
                 <p><span><i class="fa fa-skype" aria-hidden="true"></i></span> intersono.1576546884</p>
               </div>
             </div>
-            <div class="col-lg-2 phone-wrapper">
-              <div class="top-hdr-wrapper">
+            <div class="phone-wrapper visible-lg left top-hdr-wrapper">
+              <!--<div class="top-hdr-wrapper"> -->
                 <p class="right">
                   <span><i class="fa fa-mobile" aria-hidden="true"></i></span>+38 (032) 295 55 55
                 </p>
                 <p class="right">+38 (032) 295 55 55</p>
-              </div>
+              <!--</div>-->
             </div>
-            <div class="col-lg-2 reg-btn-wrapper">
-              <div class="top-hdr-wrapper">
+            <div class="reg-btn-wrapper visible-lg visible-md left top-hdr-wrapper">
+            <!--  <div class="top-hdr-wrapper"> -->
                 <button class="btn-reg btn btn-default">Sign up for consultation</button>
-              </div>
+            <!-- </div> -->
             </div>
-            <div class="col-lg-2 lang-dropdown-wrapper">
-              <div class="top-hdr-wrapper">
+            <div class="lang-dropdown-wrapper right top-hdr-wrapper">
+              <!--<div class="top-hdr-wrapper">-->
                 <!-- Single button -->
                 <div class="btn-group">
                   <button type="button" class="dropdown-toggle" data-toggle="dropdown">
@@ -68,12 +71,24 @@
                     <li><a href="#">Ukrainian</a></li>
                   </ul>
                 </div>
-              </div>
+                <nav class="visible-sm visible-xs sm-menu">
+                  <button>
+                  </button>
+                  <ul>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                  </ul>
+                </nav>
+              <!--</div>-->
             </div>
           </div>
         </div>
       </div>
-      <div class="top-menu-wrapper">
+      <div class="top-menu-wrapper visible-lg visible-md">
         <div class="container">
           <div class="row">
             <div class="menu">
@@ -138,9 +153,12 @@
                           <li><a href="#">Separated link</a></li>
                         </ul>
                       </li>
-                      <li><a href="#" class="menu-link">Patient Success stories</a></li>
-                      <li><a href="#" class="menu-link">Blogs</a></li>
-                      <li><a href="#" class="menu-link">Contact</a></li>
+                      <li><a href="#" class="menu-link visible-lg">Patient Success stories</a></li>
+                      <li><a href="#" class="menu-link visible-lg">Blogs</a></li>
+                      <li><a href="#" class="menu-link visible-lg">Contact</a></li>
+                      <li>
+                        <a href="#" class="hidden-lg more-lnk">More</a>
+                      </li>
                       <li><a href="#" class="menu-link"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                     </ul>
                   </div><!-- /.navbar-collapse -->
@@ -159,10 +177,10 @@
                     <a href="#" class="active-link">Home</a>
                   </li>
                   <li>
-                    <a href="#">Egg and sperm donor catalogs</a>
+                    <a href="#" class="visible-lg">Egg and sperm donor catalogs</a>
                   </li>
                   <li>
-                    <a href="#" class="hidden">About</a>
+                    <a href="#" class="hidden-lg">About us</a>
                   </li>
                 </ul>
               </nav>
@@ -175,10 +193,11 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <aside class="col-lg-3">
-            <div class="list-aside">
+    <div class="container">
+      <div class="row">
+          <aside class="col-lg-3 col-md-3 col-sm-12">
+            <!--</div>-->
+            <div class="list-aside hidden-sm hidden-xs">
               <div class="list-group">
                 <a href="#" class="list-group-item active">
                   IVF
@@ -199,34 +218,41 @@
                 <a href="#" class="list-group-item">Surrogacy</a>
               </div>             
             </div>
-            <form action="#" method="post">
-              <h2>Contact Us</h2>
-              <div class="form-group">
-                <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input name="phone_number" type="text" class="form-control" id="exampleInputEmail1" placeholder="With country, ex +39">
-              </div>
-              <div class="form-group">
-                <input name="country" type="text" class="form-control" id="exampleInputPassword1" placeholder="Country">
-              </div>
-              <div class="form-group">
-                <select class="form-control form-select" size="1" name="wanted">
-                  <option value="first">I am interested in</option>
-                  <option value="second">second</option>
-                  <option value="third">third</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-default btn-reg">Send</button>
-            </form>
-            <div class="main-banner"></div>
+            <div class="secret-aside hidden-lg hidden-md">
+              <p>
+                <span></span>
+              </p>
+            </div>            
+            <div class="aside-wrapper">
+              <form action="#" method="post">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                  <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <input name="phone_number" type="text" class="form-control" id="exampleInputEmail1" placeholder="With country, ex +39">
+                </div>
+                <div class="form-group">
+                  <input name="country" type="text" class="form-control" id="exampleInputPassword1" placeholder="Country">
+                </div>
+                <div class="form-group">
+                  <select class="form-control form-select" size="1" name="wanted">
+                    <option value="first">I am interested in</option>
+                    <option value="second">second</option>
+                    <option value="third">third</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-default btn-reg">Send</button>
+              </form>
+              <div class="main-banner"></div>
+            </div>
           </aside>
-          <section class="col-lg-9">
-            <div class="article-container">
-              <div class="col-lg-4 article-wrapper">
+          <section class="col-lg-9 col-md-9 col-sm-12">
+            <div class="article-container  aside-wrapper">
+              <div class="col-lg-4 col-md-4 article-wrapper">
                 <div class="wrap">
                   <article>
                     <h4>Egg donor catalogs</h4>
@@ -238,7 +264,7 @@
                   <button class="btn-reg btn btn-default">Show database</button>
                 </div>
               </div>
-              <div class="carousel-wrapper">
+              <div class="carousel-wrapper col-lg-5 col-md-5">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
@@ -274,11 +300,9 @@
                   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
                 </div> <!-- Carousel -->
               </div>
-          </div>
-
-            <div class="article-container"> 
-            <div class="col-lg-4">
-              <div class="article-wrapper">
+            </div>
+            <div class="article-container aside-wrapper"> 
+              <div class="col-lg-4 col-md-4 article-wrapper">
                 <div class="wrap">
                   <article>
                     <h4>Sperm donor catalogs</h4>
@@ -289,52 +313,49 @@
                   <button class="btn-reg btn btn-default">Show database</button>
                 </div>
               </div>
+              <div class="carousel-wrapper col-lg-5 col-md-5">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                 
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="http://weknowyourdreams.com/images/happy/happy-03.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h3></h3>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="http://cdn.playbuzz.com/cdn/250babc2-8c70-4399-8402-c2d257be3e1d/ade0bea9-5aa4-44f6-9f8e-a1785acd7df2.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h3></h3>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="http://i.huffpost.com/gen/1392994/images/o-HAPPY-WOMEN-facebook.jpg" alt="...">
+                      <div class="carousel-caption">
+                        <h3></h3>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  </a>
+                </div> <!-- Carousel -->
+              </div>
             </div>
-            <div class="carousel-wrapper">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-               
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="http://weknowyourdreams.com/images/happy/happy-03.jpg" alt="...">
-                    <div class="carousel-caption">
-                      <h3></h3>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="http://cdn.playbuzz.com/cdn/250babc2-8c70-4399-8402-c2d257be3e1d/ade0bea9-5aa4-44f6-9f8e-a1785acd7df2.jpg" alt="...">
-                    <div class="carousel-caption">
-                      <h3></h3>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="http://i.huffpost.com/gen/1392994/images/o-HAPPY-WOMEN-facebook.jpg" alt="...">
-                    <div class="carousel-caption">
-                      <h3></h3>
-                    </div>
-                  </div>
-                </div>
-               
-                <!-- Controls -->
-              <!--  
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                </a>
-              -->
-              </div> <!-- Carousel -->
-            </div>
-          </div>
           </section>
         </div>
       </div>
-      <a href="#" class="contact-us"></a>
+      <a href="#" class="contact-us visible-lg"></a>
     </main>
     <section class="bottom-section">
       <div class="container">
@@ -367,7 +388,7 @@
     </section>
     <footer>
       <div class="footer-top">
-        <button class="up-btn"></button>
+        <button class="up-btn visible-lg"></button>
         <div class="container">
           <div class="row">
             <nav class="top-bottom-nav">
@@ -489,7 +510,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="visible-lg">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                   </a>
                 </li>     

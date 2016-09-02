@@ -2,6 +2,7 @@
 @btn-hvr: #358333;
 @hdr-bg-clr: #00acac;
 @btn-clr: #4ab848;
+@mr-clr: #cbe8e8;
 @asd-clr: #ecf7f7;
 @hdr-clr: #f7f7f7;
 @fa-clr: #c1c1c1;
@@ -41,6 +42,7 @@ body textarea:required:valid {
 body {
 	position: relative;
 	font-family: @rl;
+	overflow-x: hidden;
 }
 
 ul {
@@ -58,6 +60,10 @@ ul li {
 	display: none;
 }
 
+.left {
+	float: left;
+}
+
 .parallax {
 	background-attachment: fixed;
 	background-position: 50% 0;
@@ -70,7 +76,8 @@ ul li {
 	position: relative;
 	height: 90px;
 	width: 100%;
-	background-color: @hdr-clr;
+	/*background-color: @hdr-clr;*/
+	/*overflow:hidden;*/
 }
 
 .top-header .col-md-3 {
@@ -84,7 +91,6 @@ ul li {
 
 .top-hdr-wrapper {
 	padding-top: 20px;
-	min-height: 90px;
 }
 
 .top-hdr-wrapper .btn-group {
@@ -94,6 +100,28 @@ ul li {
 header .top-header span i {
     font-size: 1em;
     color: @fa-clr;
+}
+
+nav.sm-menu {
+	float: right;
+}
+
+nav.sm-menu button {
+	background-color: transparent;
+	border-color: transparent;
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/navbar.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+nav.sm-menu button i {
+	color:@hdr-bg-clr;	
+}
+
+.logo-wrapper, .phone-wrapper {
+	margin-right: 85px;
 }
 
 .top-hdr-wrapper p {
@@ -108,6 +136,7 @@ header .top-header span i {
 .top-contacts {
 	color: @hdr-bg-clr;
 	font-size: 1.1em;
+	margin-right: 30px;
 }
 
 .top-contacts p:first-child {
@@ -119,6 +148,7 @@ header .top-header span i {
 p.right {
 	font-size: 1em;
 	text-align: right;
+	width: 140px;
 }
 
 header .top-hdr-wrapper p.right i {
@@ -137,9 +167,23 @@ button.btn-reg {
 	padding: 11px 20px;
 }
 
+header .top-menu-wrapper .menu nav ul.nav li:nth-child(9) a {
+	text-decoration: none;
+	border-bottom: 1px dashed @mr-clr;
+	color: @mr-clr;
+	padding: 0;
+	margin: 30px 0 30px 25px;
+	line-height: 16px;
+}
+
 .btn-reg.btn.btn-default:hover {
 	background-color: @btn-hvr;
 	color: @wh;
+}
+
+.lang-dropdown-wrapper {
+	margin-right: 30px;
+	min-width: 90px;
 }
 
 .lang-dropdown-wrapper button {
@@ -259,6 +303,26 @@ a.active-link {
 h2 {
 	text-align: center;
 	text-transform: uppercase;
+}aside
+
+.secret-aside {
+	width: 45px;
+	box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	height:2000px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+}
+
+.secret-aside span {
+	margin-top: 30px;
+	width: 100%;
+	height: 40px;
+	display: block;
+	background-image: url('../img/circle.png');
+	background-repeat: no-repeat;
+	background-position: 19px center;
 }
 
 .main-banner {

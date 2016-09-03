@@ -83,11 +83,11 @@ ul li {
 .top-header .col-md-3 {
 	padding-left: 0; 
 }
-
+/*
 .top-header .logo {
 	display: inline-block;
 	padding-top: 13px;
-}
+}*/
 
 .top-hdr-wrapper {
 	padding-top: 20px;
@@ -118,6 +118,15 @@ nav.sm-menu button {
 
 nav.sm-menu button i {
 	color:@hdr-bg-clr;	
+}s
+
+.logo-wrapper {
+	line-height: 90px;
+	height: 90px;
+}
+
+.logo-wrapper img:nth-child(2) {
+	margin: 0 auto;
 }
 
 .logo-wrapper, .phone-wrapper {
@@ -489,7 +498,7 @@ section.bottom-section h2 span {
 }
 
 .square-container {
-	width: 30%;
+	width: 31.3%;
 	float: left;
 	margin: 0 1% 0 1%;
 	background-color: rgba(0,172,172,.5);
@@ -535,6 +544,7 @@ section.bottom-section h2 span {
 footer {
 	background-color: @ftr-clr;
 	color: @ftr-font;
+	z-index: 20;
 }
 
 .up-btn {
@@ -567,6 +577,8 @@ footer {
 	color: @wh;
 	text-transform: uppercase;
 	font-family: @rb;
+	width: 90%;
+	float: left;
 }
 
 .footer-top nav li a {
@@ -574,12 +586,31 @@ footer {
 	padding: 15px 0;
 }
 
-.footer-bottom {
-	border-top: 2px solid @ftr-brdr;
-	height: 117px;
+.top-bottom-nav span {
+	display: block;
+	float: right;
+	width: 10%;
+	height: 32px;
+	background-image: url('../img/down_arr.png');
+	background-repeat: no-repeat;
+	background-position: 3px 17px;
 }
 
-.footer-bottom span:first-child {
+.top-bottom-nav.active ul {
+	display: block !important;
+}
+
+.top-bottom-nav.active span {
+	background-image: url('../img/up_arr.png');	
+}
+
+
+.footer-bottom {
+	border-top: 2px solid @ftr-brdr;
+	height: 112px;
+}
+
+.footer-bottom span.left {
 	float: left;
 }
 
@@ -592,11 +623,10 @@ footer {
 .footer-bottom nav {
 	display: inline-block;
 	line-height: 90px;
-	margin-left: 22%;
 }
 
 .footer-bottom nav li {
-	padding: 0 35px;
+	padding: 0 8%;
 	line-height: 110px;
 	margin: 0;
 }
@@ -612,7 +642,7 @@ footer {
 .footer-bottom .soc-icons-menu i {
 	font-size: 2em;
 	color: @ftr-brdr;
-	line-height: 90px;
+	line-height: 60px;
 }
 
 .footer-bottom .container {
@@ -644,6 +674,10 @@ footer {
 	position: relative;
 	top: -54px;
 	left: 215px;
+}
+
+.footer-bottom-container {
+	border-bottom: 2px solid transparent;
 }
 
 /*END*/

@@ -1,4 +1,27 @@
 /*==========  Desktop First Method  ==========*/
+/*COLORS:*/
+@btn-hvr: #358333;
+@hdr-bg-clr: #00acac;
+@btn-clr: #4ab848;
+@mr-clr: #cbe8e8;
+@asd-clr: #ecf7f7;
+@hdr-clr: #f7f7f7;
+@fa-clr: #c1c1c1;
+@mn-brdr: #009a9a;
+@mn-lnk-act: #028e8e;
+@frm-bg: #ecf7f7;
+@frm-clr: #dadada;
+@bnr-clr: #a8b9c6;
+@lst-clr: #d9e9e9;
+@lst-font: #415959;
+@ftr-hvr: #3e7ed6;
+@ftr-clr: #2b2b2b;
+@ftr-brdr: #4d4d4d;
+@ftr-font: #7e7e7e;
+@lg-clr: #bfbfbf;
+@wh: #fff;
+@bl: #000;
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -7,13 +30,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-	main section {
-		float: right;
+	main {
+		clear: both;
 	}
 	
 	div.carousel-wrapper{
@@ -21,7 +39,7 @@
 	}
 
 	main .container {
-		padding: 0;
+		margin: 0;
 	}
 
 	main {
@@ -33,16 +51,85 @@
 		margin-left: 7%;
 	}
 
+	/*.footer-top nav h5 {
+		text-align: right;
+	}*/
+
+	.footer-top nav {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 40%;
+	}
 }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 750px) {
+
+	footer-bottom {
+		height: 215px;
+		display: inline-block;
+		width: 100%;
+	}
+
+	section.bottom-section h2 {
+		font-size: 1.8em;
+	}
+
+	nav.col-lg-4.col-md-4 {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.footer-bottom-container {
+		border-color: @ftr-brdr;
+		height: 122px;
+	}
+	
+	.squares {
+			width: 98%;
+		}
+}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+/*
+	.square-container {
+		width: 50%;
+		float: none;
+		margin: 14px auto;	
+	}
+	section.bottom-section {
+		background-image:url('../img/bottom_section_bg_xs.jpg');
+		min-height: 982px;
+		background-position: center center;
+		width: 100%;
+	}
+
+
+*/
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.square-container {
+		width: 92%;
+		margin: 3%;
+		float: none;
+		margin: 14px auto;	
+	}
+	section.bottom-section span.hidden {
+		display: inline-block;
+	}
 
+	section.bottom-section {
+		background-image:url('../img/bottom_section_bg_xs.jpg');
+		min-height: 982px;
+		background-position: center center;
+	}
 }
 
 

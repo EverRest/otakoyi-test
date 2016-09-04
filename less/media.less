@@ -39,13 +39,29 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 970px) {
+	
+	.top-bottom-nav h5::after {
+		background-position: 5px 0;
+	}
+
+	main .list-aside a.active.list-group-item {
+		background-color: @hdr-bg-clr;
+		color: @wh;
+		border-radius: 0;
+	}
+
+	div.carousel-wrapper {
+		margin-bottom: 40px;
+	}
+
 	.lang-dropdown-wrapper.right.top-hdr-wrapper {
 		float: right;
 	}
 
 	header .container, main .container,
 	header .row, main .row,
+	.footer-bottom .container, .footer-bottom .row,
 	col-lg-12, col-md-12, 
 	col-sm-12, col-xs-11 {
 		margin: 0;
@@ -100,6 +116,10 @@
 		font-size: 2.4em;
 	}
 
+	main form button {
+		margin-left: 40%;
+	}
+
 	.secret-aside.visible-xs {
 		padding: 0;
 	}
@@ -140,6 +160,19 @@
 		height: 100%;
 	}
 
+	.aside-wrapper form {
+		max-width: 450px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.main-banner {
+		height: 240px;
+		max-width: 450px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+
 	.footer-bottom {
 		height: 215px;
 		display: inline-block;
@@ -172,22 +205,24 @@
 	.squares {
 		width: 98%;
 	}
+
+	.date-design {
+		max-height: 55px;
+		text-align: cemter;
+	}
 	
 	.logo-wrapper.top-hdr-wrapper img, nav.sm-menu button,
 	header div.top-header {
 		height: 50px;
 	}
-/*
-	.footer-bottom:first-child {
-		width: 100%;
-	}
-*/
-	.date-design {
+
+	footer p.otakoyi-logo {
+		padding-top: 0;
 		text-align: center;
 	}
 
-	.bottom-logo {
-	text-align: center;
+	.date-design, .bottom-logo {
+		text-align: center;
 	}
 
 	.soc-icons-menu li {
@@ -201,6 +236,11 @@
 		margin: 0 auto;
 	}
 	
+	.footer-bottom nav {
+		border-bottom: 2px solid @ftr-brdr;
+		font-size: 0.8em;
+	}
+
 	.footer-bottom nav li {
 		padding: 0;
 	}
@@ -209,8 +249,23 @@
 
 
 @media only screen and (max-width : 600px) {
+
 	main .secret-aside span {
 		background-position: 19px center;
+	}
+	
+	div.carousel-wrapper {
+		margin-bottom: 0;
+	}
+	p.otakoyi-logo {
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (max-width : 380px) {
+
+	.carousel-wrapper {
+		min-height: 250px;
 	}
 }
 
@@ -226,13 +281,37 @@
 		-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
 		-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
 		box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
-		height: 2912px;
+		height: 2605px;
 	}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+	.bottom-section span.hidden {
+		display: inline-block !important;
+	}
+
+	.carousel-wrapper {
+		min-height: 225px;
+	}
+
+	.aside-wrapper form, .aside-wrapper .main-banner {
+		max-width: 245px;
+		margin: 0 auto;
+	}
+
+	.aside-wrapper .main-banner {
+		margin: 60px 0 30px 0;
+		height: 180px;
+	}
+
+	.aside-wrapper .main-banner {
+		background-image: url('../img/banner.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 
 	.logo-wrapper.top-hdr-wrapper img {
 		height: 36px;
@@ -248,6 +327,16 @@
 		float: none;
 		margin: 14px auto;	
 	}
+
+	main form {
+		padding-top: 20px;
+		height: 380px;
+	}
+
+	main form h2 {
+		padding-bottom: 20px;
+	}
+
 	section.bottom-section span.hidden {
 		display: inline-block;
 	}
@@ -261,7 +350,20 @@
 
 	main .secret-aside span {
 		width: 100%;
-		background-position: 10px center;
+		background-position: 0 center;
+	}
+
+	main .secret-aside {
+		height: 2595px;
+	}
+
+	.main-banner h2, .main-banner a {
+		display: block !important;
+		color: @wh;
+	}
+
+	main form button {
+		margin-left: 30%;
 	}
 }
 
